@@ -19,9 +19,8 @@ Using bulleted lists, describe the accuracy scores and the precision and recall 
 
 ## Summary
 
-Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
+The logistic regression model performed exceptionally well, achieving an overall accuracy of 0.99. It demonstrated near-perfect precision and recall for predicting healthy loans (`0`), and strong performance in identifying high-risk loans (`1`), with a precision of 0.84 and a recall of 0.94.
 
-* Which one seems to perform best? How do you know it performs best?
-* Does performance depend on the problem we are trying to solve? (For example, is it more important to predict the `1`'s, or predict the `0`'s? )
+This means the model correctly identified most high-risk loans while maintaining a low false-positive rate. In a financial context where the cost of missing a high-risk loan can be significant, the high recall for the `1` class is especially valuable.
 
-If you do not recommend any of the models, please justify your reasoning.
+Given these results, the logistic regression model is recommended for deployment, particularly in scenarios where identifying high-risk loans is a priority. While other models could potentially improve performance further, this model provides a strong and reliable baseline.
